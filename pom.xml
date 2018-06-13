@@ -206,17 +206,7 @@
       </plugin>
     </plugins>
   </reporting>
-  <plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>cobertura-maven-plugin</artifactId>
-    <configuration>
-       <formats>
-           <format>html</format>
-           <format>xml</format>
-       </formats>
-    </configuration>
-</plugin>
-
+	
       <profiles>
         <profile>
             <id>development</id>
@@ -501,5 +491,16 @@
             </reporting>
         </profile>
     </profiles>
+	<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>cobertura-maven-plugin</artifactId>
+    <configuration>
+       <formats>
+           <format>html</format>
+           <format>xml</format>
+       </formats>
+    </configuration>
+</plugin>
+
 
 </project>
